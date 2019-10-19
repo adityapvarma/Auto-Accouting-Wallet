@@ -1,0 +1,162 @@
+<html lang="en">
+<header>
+<ul>
+	<li><a href="localhost:8080/testhtml.html">Home</a></li>
+	<li><a href="D://stuff">Songs</a></li>
+	<li><a href="C://ProgramData/Microsoft/Windows/Start Menu/Programs/MySQL/MySQL Server 8.0/MySQL 8.0 Command Line Client">Mysql</a></li>
+</ul>
+
+</header>
+
+<style>
+body{
+	background-color:white;
+
+}
+h1{
+	color:solid blue;
+	text-align:center;
+}
+h2{
+	margin-top:100px;
+	margin-bottom:50px;
+	text-align: centre;
+	color:black;
+	font-family:verdona;
+	font-size:20px;
+	
+}
+img{
+
+border: 1px solid #ddd;
+border-radius:4px;
+padding:10px;
+height:auto;
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:20%;
+
+}
+
+h1.one{
+
+border-style:solid;
+border-width:3px;
+
+}
+h2.two{
+
+border-style:solid;
+border-width:4px;
+
+}
+h4 {
+margin-top:10px;
+margin-bottom:10px;
+font-size:20px;
+}
+table,th,td{
+border:1px solid black;
+border-collapse:collapse;
+}
+th,td{
+margin-top:2px;
+padding:5px;
+text-align:left;
+}
+	.center{
+		margin:0 auto;width: 200px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+	}
+	header{
+		line-height:12rem;
+		height: 12rem;
+}
+	
+</style>
+<body>
+<div id ="nav_bar" style="background-color: brown;">
+</div>
+<h1 class="one">Smart-Wallet </h1>
+<img src='smart-wallet.jpg' width='300' >
+<video height="250",width="120" controls autoplay>
+	<source src="a1.mp4" type="video/mp4">
+</video>
+
+<script>
+
+var modal = document.getElementById('myModal');
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+
+}
+</script>
+<button onclick="getLocation()">Try It</button>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<script>
+function showPosition(position) {
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_:KEY";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+</script>
+<button onclick="showPosition()">Map</button>
+<h2 class="two"> Transaction Details</h2>
+Username: <input type="text" name="Username" value=""><br>
+Db_Password: <input type="Password" name="Db_Password" value="FakePSW"><br>
+<input type="submit" value="Submit" onClick="myfunction()">
+<script>
+	function myfunction()</script>
+</form>
+<h3> Denominations </h3>
+<table style='width:100%'>
+<tr>
+<th>Currency_type</th>
+<th>Region</th>
+<th>Source_lat</th>
+<th>Source_long</th>
+<th>Time-Stamp</th>
+</table>
+<h4> Withdrawls </h4>
+<table style='width:100%'>
+<tr>
+<th>Currency_type</th>
+<th>Region</th>
+<th>Source_lat</th>
+<th>Source_long</th>
+<th>Time-Stamp</th>
+</table>
+
+</body>
+</html>
+?>

@@ -1,0 +1,225 @@
+<html>
+<title>smart-wallet login page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width", initial-scale="1">
+<link rel="stylesheet" href="first_page.css">
+<style>
+.bgimg{
+background-position:centre;
+background-size:cover;
+background-image:
+min-height:50%
+}
+.menu{
+
+display: none;
+
+}
+.top{
+position:fixed;
+width:100%;
+z-index:1
+}
+.content_main{
+color:#000!important;background-color:#f1f1f1!important
+}
+.content{
+max-width:980px;
+}
+.navbar{
+padding:0.01em 16px;
+}
+.centre{
+text-align:center!important;
+}
+.padding-32
+{
+padding-top:32px!important;padding-bottom:32px!important;
+}
+.image{
+max-width:100%;height:auto}
+img{vertical-align:middle}
+a{color:inherit}
+@media(max-width:1500px){.hide_medium{
+display:none!important;
+}
+}
+@media(max-width:1500px){.hide_small{
+display:none!important;
+}
+}
+.xxx_large{
+font-size:48px!important;
+}
+.display_middle{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%)
+}
+.padding_large{
+padding:12px 24px!important;
+}
+.border{
+border:1px solid #ccc!important;
+}
+.wide{
+letter-spacing:4px;
+}
+.text_light_gray{
+color:#f1f1f1!important;
+}
+.display_container{
+	position:relative;
+}
+@media(max-width:1500px){.hide_large{
+display:none!important;
+}
+}
+body {
+	background: #eee !important;
+}
+
+.wrapper {
+	margin-top: 80px;
+  margin-bottom: 80px;
+  background-color:#f1f1f1!important;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color:#f1f1f1!important;
+  border: 1px solid rgba(0,0,0,0.1);
+
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	  font-family:
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+	  padding-bottom:5px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+}
+</style>
+
+<body>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<header class="display_container content centre" style="max-width:1500px" >
+<img class="image" src="test_img1.jpg" alt="Me" width="1500" height="1000">
+<div class="display_middle padding_large border wide text_light_gray centre">
+<h1 class="hide_medium hide_small xxx_large">SMART-WALLET</h1>
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55 ">
+				<form class="login100-form validate-form flex-sb flex-w" action="second_page1.php" method="POST" >
+					<span class="login100-form-title p-b-32">
+						Account Login
+					</span>
+
+					<span class="txt1 p-b-11">
+						Username
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+						<input class="input100" type="text" name="username" id="Uname">
+						<span class="focus-input100"></span>
+					</div>
+
+					<span class="txt1 p-b-11">
+						Password
+					</span>
+					<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+						<span class="btn-show-pass">
+							<i class="fa fa-eye"></i>
+						</span>
+						<input class="input100" type="password" name="pass" id="pwd">
+						<span class="focus-input100"></span>
+					</div>
+
+
+
+
+
+
+					<div class="container-login100-form-btn">
+						<br>
+						<a class="btn" href="second_page1.php">login</a>
+						<!-- <button class="login100-form-btn" onclick="location.href='second_page1.php'">
+							Login
+						</button> -->
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+</body>
+</html>
